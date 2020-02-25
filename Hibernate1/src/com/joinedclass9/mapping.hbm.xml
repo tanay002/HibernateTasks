@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8'?>  
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+   
+    <hibernate-mapping>
+    <class name="com.inheritance.joinedclass9.College" table="joined_clg">
+   <id name="cid">
+   <generator class="increment"></generator>
+   </id>
+   <property name="cname"></property>
+   
+   
+   <joined-subclass name="com.inheritance.joinedclass9.Student"  table="joined_stud">
+       <key column="cid"/>
+   <property name="sname"></property>
+   </joined-subclass>
+   
+    <joined-subclass name="com.inheritance.joinedclass9.Faculty"  table="joined_facul">
+       <key column="cid"/>
+   <property name="fname"></property>
+
+   </joined-subclass>
+    </class>
+  
+    </hibernate-mapping>
