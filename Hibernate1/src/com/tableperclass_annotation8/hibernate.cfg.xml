@@ -13,7 +13,7 @@
 
 		<property name="show_sql">true</property>
 		<property name="dialect">org.hibernate.dialect.MySQLDialect</property>
-		<property name="hbm2ddl.auto">create</property>
+		<property name="hbm2ddl.auto">create_update</property>
 		
 		<mapping class="com.annotation.tableperclass8.College"/>
 		<mapping class="com.annotation.tableperclass8.Student"/>
