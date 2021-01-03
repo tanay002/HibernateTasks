@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jre1.8.0_1922">
+		<attributes>
+			<attribute name="owner.project.facets" value="java"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry kind="lib" path="E:/Eclipse/jar 2/Hibernate Required jar/antlr.jar"/>
+	<classpathentry kind="lib" path="E:/Eclipse/jar 2/Hibernate Required jar/apache-log4j-1.2.15.jar"/>
+	<classpathentry kind="lib" path="E:/Eclipse/jar 2/Hibernate Required jar/commons-collections.jar"/>
+	<classpathentry kind="lib" path="E:/Eclipse/jar 2/Hibernate Required jar/dom4j-1.6.1.jar"/>
+	<classpathentry kind="lib" path="E:/Eclipse/jar 2/Hibernate Required jar/hibernate-annotations.jar"/>
+	<classpathentry kind="lib" path="E:/Eclipse/jar 2/Hibernate Required jar/hibernate-commons-annotations.jar"/>
+	<classpathentry kind="lib" path="E:/Eclipse/jar 2/Hibernate Required jar/hibernate-core.jar"/>
+	<classpathentry kind="lib" path="E:/Eclipse/jar 2/Hibernate Required jar/javassist.jar"/>
+	<classpathentry kind="lib" path="E:/Eclipse/jar 2/Hibernate Required jar/javax.transaction.jar"/>
+	<classpathentry kind="lib" path="E:/Eclipse/jar 2/Hibernate Required jar/jta.jar"/>
+	<classpathentry kind="lib" path="E:/Eclipse/jar 2/Hibernate Required jar/log4j.jar"/>
+	<classpathentry kind="lib" path="E:/Eclipse/jar 2/Hibernate Required jar/mysql-connector-java-5.1.3.jar"/>
+	<classpathentry kind="lib" path="E:/Eclipse/jar 2/Hibernate Required jar/persistence.jar"/>
+	<classpathentry kind="lib" path="E:/Eclipse/jar 2/Hibernate Required jar/persistence-api-1.0.2.jar"/>
+	<classpathentry kind="lib" path="E:/Eclipse/jar 2/Hibernate Required jar/slf4j-api.jar"/>
+	<classpathentry kind="lib" path="E:/Eclipse/jar 2/Hibernate Required jar/slf4j-log4j12.jar"/>
+	<classpathentry kind="output" path="build/classes"/>
+</classpath>
