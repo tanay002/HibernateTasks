@@ -13,9 +13,9 @@
     <property name="hbm2ddl.auto">update</property>
    	 <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
    	
-<property name="hibernate.current_session_context_class">
+<!-- <property name="hibernate.current_session_context_class">
           thread
-</property>
+</property>  -->
 
    	 <!-- <mapping class="com.annotation3persistsave.Employeee"/> -->
    	  	 <mapping class="com.annotation3persistsave.EmployeePer"/>
