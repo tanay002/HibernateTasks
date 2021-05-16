@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8'?>  
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+    <hibernate-mapping>
+   <class name="com.namedquerys.Employee" table="dbase">
+   <id name="id">
+   <generator class="increment"></generator>
+   </id>
+   <property name="name"></property>
+      <property name="city"></property>
+      <property name="mobileno"></property>
+      <property name="college"></property>
+         <property name="salary"></property>
+   </class> 
+   <query name="selectdata">from Employee</query>
+<!--    <query name="updatedata"><![CDATA[from Employee where id=18]]></query> -->
+   <query name="seledata">from Employee where id=18</query>
+   <query name="selecctdata"><![CDATA[from Employee where id=:i]]></query>
+  
+  <!--Update Data  -->
+     <query name="update"><![CDATA[update Employee set name=:n where id=:i]]></query>
+    
+    </hibernate-mapping>

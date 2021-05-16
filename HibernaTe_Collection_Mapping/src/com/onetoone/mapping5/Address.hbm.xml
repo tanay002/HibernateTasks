@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>  
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+    <hibernate-mapping>
+    <class name="com.onetoone.mapping5.Address" table="OTOAddressx">
+    <id name="addId">
+    <generator class="foreign">
+    <param name="property">std</param>
+    </generator>
+    </id>
+    <property name="city"></property>
+        <property name="street"></property>
+          <one-to-one name="std"></one-to-one>
+    
+    </class>
+    
+    </hibernate-mapping>

@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>  
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+    <hibernate-mapping>
+    <class name="com.collectionm.onetomany.set3.Question" table="otm_set_Question">
+    <id name="qId">
+    <generator class="increment"></generator>
+    </id>
+    <property name="qName"></property>
+    <set name="ans" cascade="all">
+    <key column="quesId"></key>
+    <one-to-many class="com.collectionm.onetomany.set3.Answer"/>
+    </set>
+    </class>
+    
+    </hibernate-mapping>

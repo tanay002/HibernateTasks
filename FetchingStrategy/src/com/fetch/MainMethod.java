@@ -23,13 +23,13 @@ public class MainMethod
 		Session ses=sf.openSession();
 		Transaction tx=ses.beginTransaction();
 	
-	Company c= (Company)ses.get(Company.class,1);
+/*	Company c= (Company)ses.get(Company.class,1);
 		List<Employee> add = c.getEmp();
-       System.out.println(c);
+       System.out.println(c);*/
 		
-	/* Criteria crt=ses.createCriteria(Company.class);
+	 Criteria crt=ses.createCriteria(Company.class);
 		List<Company> list=crt.list();
-		System.out.println(list);*/
+		System.out.println(list);
 	/*  */
 	    ses.close();    
 	    System.out.println("success"); 

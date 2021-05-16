@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>  
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+    <hibernate-mapping>
+    <class name="com.collectionm.onetomany.list.Question" table="otm_Question">
+    <id name="qId">
+    <generator class="increment"></generator>
+    </id>
+    <property name="qName"></property>
+    <list name="ans" cascade="all" inverse="true">
+    <key column="quesId"></key>
+    <index column="indexx"></index>
+    <one-to-many class="com.collectionm.onetomany.list.Answer" />
+    </list>
+    </class>
+    
+    </hibernate-mapping>

@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>  
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.inheritance.tableperclass7.College" table="tableperclass_clg">
+		<id name="cid">
+			<generator class="increment" />
+		</id>
+		<property name="cname"></property>
+
+		<union-subclass
+			name="com.inheritance.tableperclass7.Student" table="tableperclass_stud">
+			<properties name="sname"></properties>
+		</union-subclass>
+
+		<union-subclass
+			name="com.inheritance.tableperclass7.Faculty" table="tableperclass_facul">
+			<properties name="fname"></properties>
+		</union-subclass>
+	</class>
+</hibernate-mapping>

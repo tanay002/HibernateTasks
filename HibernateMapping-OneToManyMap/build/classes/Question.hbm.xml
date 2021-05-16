@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.bytecoder.map.Question" table="Question_tabbo">
+		<id name="qid">
+		
+		</id>
+
+
+		<map name="answers" cascade="all">
+			<key column="qid"></key>
+			<index column="answerk" type="String"></index>
+			<one-to-many class="com.bytecoder.map.Answer"/>
+			<!-- <element column="qname" type="string"></element> -->
+		</map>
+		<property name = "qname"></property>
+</class>
+
+<class name = "com.bytecoder.map.Answer" table="answer_tabbo">
+      <id name = "id">
+        
+      </id>
+      <property name = "answername"></property>
+   </class>
+
+</hibernate-mapping>
+
+ 

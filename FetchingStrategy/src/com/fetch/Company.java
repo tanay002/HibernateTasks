@@ -34,10 +34,10 @@ public class Company
 
 	@OneToMany(cascade = CascadeType.ALL,fetch = FetchType.EAGER) 
     @JoinColumn(name = "company_id")
-   // @Fetch(FetchMode.JOIN)
-//	@Fetch(FetchMode.SUBSELECT)
-	@Fetch(FetchMode.SELECT)
-	@BatchSize(size=5)
+   //@Fetch(FetchMode.JOIN)
+	//@Fetch(FetchMode.SUBSELECT)
+	//@Fetch(FetchMode.SELECT)
+	//@BatchSize(size=5)
 	private List<Employee> emp;  
 
     
